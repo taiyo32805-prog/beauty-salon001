@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVE | SAMPLE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-hero {
+            height: 400px;
+            background: var(--bg-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .content-body {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+
+        .form-group {
+            margin-bottom: 30px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 1rem;
+            background: var(--bg-secondary);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .reserve-btn {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .reserve-notes {
+            margin-top: 50px;
+            padding: 30px;
+            background: var(--grey-light);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <a href="../index.html" class="logo">SAMPLE</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="concept.html">CONCEPT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="saloninfo.html">SALONINFO</a></li>
+                <li><a href="blog.html">BLOG & NEWS</a></li>
+                <li><a href="reserve.html">RESERVE</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="section-title">RESERVE</h1>
+                <p>24時間オンライン予約</p>
+            </div>
+        </section>
+
+        <section class="content-body">
+            <form action="#" method="get" onsubmit="alert('これはサンプルサイトです。実際の予約は送信されません。'); return false;">
+                <div class="form-group">
+                    <label for="name">お名前 (必須)</label>
+                    <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                </div>
+                <div class="form-group">
+                    <label for="tel">電話番号 (必須)</label>
+                    <input type="tel" id="tel" name="tel" placeholder="00-0000-0000" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス (必須)</label>
+                    <input type="email" id="email" name="email" placeholder="example@sample.jp" required>
+                </div>
+                <div class="form-group">
+                    <label for="menu">ご希望のメニュー</label>
+                    <select id="menu" name="menu">
+                        <option value="cut">カット</option>
+                        <option value="color">カット ＋ カラー</option>
+                        <option value="perm">カット ＋ パーマ</option>
+                        <option value="other">その他（備考欄にご記入ください）</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">ご来店希望日</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="message">備考（ご要望など）</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn reserve-btn">上記の内容で予約する</button>
+            </form>
+
+            <div class="reserve-notes">
+                <h3 style="margin-bottom:15px; font-size:1rem;">予約に関する注意事項</h3>
+                <p>・当日のご予約はお電話にて承っております。</p>
+                <p>・キャンセル・変更は前日までにお願いいたします。</p>
+                <p>・無断キャンセルが続く場合、次回以降のご予約をお断りすることがございます。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">SAMPLE</div>
+        <p class="copyright">&copy; 2024 SAMPLE Hair Salon. All Rights Reserved.</p>
+        <p class="disclaimer">※このサイトは架空の美容院を想定したサンプルサイトです。</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
