@@ -1,0 +1,559 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    /* Color Palette */
+    --bg-primary: #FDFCF8;
+    /* Lighter Ivory */
+    --bg-secondary: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #666666;
+    --accent: #C5A073;
+    /* Sophisticated Gold-Beige */
+    --accent-light: #F2E8DA;
+    --grey-light: #F7F7F7;
+    --border: #EBEBEB;
+
+    /* Spacing */
+    --section-padding: 120px 5%;
+    --container-max-width: 1200px;
+
+    /* Transitions */
+    --transition-smooth: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.8;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 常に白や淡い背景の時は文字を読みやすく黒(#000000)に強制 */
+[style*="background: var(--bg-secondary)"],
+[style*="background: var(--bg-primary)"],
+[style*="background: white"],
+[style*="background-color: white"],
+[style*="background: #fff"],
+[style*="background: #FFFFFF"],
+.bg-white,
+.content-body div {
+    color: #000000 !important;
+}
+
+[style*="background"] h2,
+[style*="background"] h3,
+.content-body h2 {
+    color: #000000 !important;
+}
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    /* Default header color to black */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-smooth);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Reusable Classes */
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: var(--section-padding);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 1px;
+    background-color: var(--accent);
+    margin: 20px auto 0;
+}
+
+/* ページ上部のヒーロー背景用 */
+.page-hero {
+    height: 500px !important;
+    /* 全ページ共通で高さを確保 */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0 !important;
+    padding-top: 80px;
+    /* ヘッダーの高さを考慮 */
+    overflow: hidden;
+}
+
+.page-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* 画像の上に薄い黒を重ねて文字を読みやすく */
+    z-index: 1;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.page-hero .section-title,
+.page-hero p {
+    color: #FFFFFF !important;
+    /* 背景が写真なので文字は白に固定 */
+    text-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+
+.page-hero .section-title {
+    font-size: 3.5rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 10px;
+}
+
+.page-hero .section-title::after {
+    background-color: #FFFFFF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 45px;
+    border: 1px solid var(--accent);
+    color: var(--text-primary);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 100px;
+}
+
+.btn:hover {
+    background: var(--accent);
+    color: white;
+    box-shadow: 0 10px 20px rgba(197, 160, 115, 0.3);
+    transform: translateY(-2px);
+}
+
+/* Header & Nav */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: var(--transition-smooth);
+}
+
+header.scrolled {
+    padding: 15px 5%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    color: #000000;
+}
+
+header.scrolled .logo,
+header.scrolled .nav-links a {
+    color: #000000;
+}
+
+header.scrolled .burger span {
+    background: #000000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: var(--transition-smooth);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Mobile Nav */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    width: 25px;
+    height: 1px;
+    background: var(--text-primary);
+    margin: 6px 0;
+    transition: var(--transition-smooth);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    /* 画像を隠さないよう透明に設定 */
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    /* 明示的に前面へ */
+    filter: brightness(0.8);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    /* 画像より前面へ */
+    text-align: center;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    padding: 80px 100px;
+    max-width: 900px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: fadeInUp 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 25px;
+    font-weight: 200;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: var(--text-secondary);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Concept Section */
+.concept {
+    background: var(--bg-secondary);
+}
+
+.concept-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.concept-text h2 {
+    text-align: left;
+}
+
+.concept-text h2::after {
+    margin: 20px 0 0;
+}
+
+.concept-text p {
+    margin-bottom: 25px;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 2;
+}
+
+.concept-img img,
+.concept-img div {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Menu Section */
+.menu {
+    background: var(--bg-primary);
+}
+
+.menu-list {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    transition: var(--transition-smooth);
+}
+
+.menu-item:hover {
+    padding-left: 20px;
+    background: rgba(210, 180, 140, 0.05);
+}
+
+.menu-name {
+    font-weight: 500;
+}
+
+.menu-price {
+    color: var(--accent);
+}
+
+/* Style Section */
+.style-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.style-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.style-card img {
+    transition: var(--transition-smooth);
+}
+
+.style-card:hover img {
+    transform: scale(1.05);
+}
+
+.style-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    color: white;
+    opacity: 0;
+    transition: var(--transition-smooth);
+}
+
+.style-card:hover .style-overlay {
+    opacity: 1;
+}
+
+/* Salon Info */
+.info {
+    background: var(--bg-secondary);
+}
+
+.info-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.info-details p {
+    margin-bottom: 15px;
+}
+
+.info-label {
+    font-weight: 600;
+    margin-right: 15px;
+    display: inline-block;
+    width: 100px;
+}
+
+/* Footer */
+footer {
+    padding: 60px 5% 30px;
+    background: var(--text-primary);
+    color: white;
+    text-align: center;
+}
+
+.footer-logo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin-top: 40px;
+}
+
+.disclaimer {
+    font-size: 0.7rem;
+    opacity: 0.4;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .style-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 5%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-content {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--bg-primary);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        gap: 30px;
+    }
+
+    .nav-links.active a {
+        font-size: 1.5rem;
+    }
+
+    .burger.toggle span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.toggle span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
