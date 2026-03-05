@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | SAMPLE | 都会の喧騒を忘れる、あなただけのプライベートサロン</title>
+    <meta name="description" content="架空の美容院SAMPLEの公式サイトです。シンプルで心地よい空間の中で、一人ひとりの個性を引き出すヘアデザインをご提案します。">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <a href="../index.html" class="logo">SAMPLE</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="concept.html">CONCEPT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="saloninfo.html">SALONINFO</a></li>
+                <li><a href="blog.html">BLOG & NEWS</a></li>
+                <li><a href="reserve.html">RESERVE</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <img src="../assets/images/main_visual.png" alt="Hair Salon Exterior" class="hero-img">
+            <div class="hero-content">
+                <h1 style="color: var(--text-primary) !important;">SAMPLE</h1>
+                <p>日常にそっと寄り添うヘアデザインを。<br>シンプルで心地よい空間の中で、あなただけのスタイルを見つけてください。</p>
+            </div>
+        </section>
+
+        <section class="content-body" style="max-width: 900px; margin: 0 auto; padding: 100px 20px;">
+            <!-- Philosophy -->
+            <div style="margin-bottom: 120px; text-align: center;">
+                <h2
+                    style="margin-bottom:30px; font-family:'Outfit'; font-weight:300; text-transform:uppercase; letter-spacing: 0.1em;">
+                    Our Philosophy</h2>
+                <p style="font-size: 1.05rem; line-height: 2; margin-bottom: 40px; color: var(--text-secondary);">
+                    SAMPLEは、お客様のライフスタイルに溶け込む「再現性」と「透明感」を追求するプライベートサロンです。<br>
+                    髪を整えることで、明日からの毎日が少しだけ前向きになる。そんな心地よい体験を、最高の技術と空間でお届けします。
+                </p>
+            </div>
+
+            <!-- Concept Portal -->
+            <div class="reveal"
+                style="margin-bottom: 100px; padding: 50px; background: var(--bg-primary); border-radius: 12px; border: 1px solid var(--border);">
+                <h2
+                    style="margin-bottom:20px; font-family:'Outfit'; font-weight:300; letter-spacing: 0.1em; color: var(--accent);">
+                    CONCEPT</h2>
+                <p style="margin-bottom: 30px; line-height: 1.8;">
+                    「自然体でいられる美しさ」を大切に。トレンドを抑えつつ、あなただけの個性を引き出す計算されたカットと、髪に優しい薬剤にこだわっています。私たちのスタイルへの想いをご覧ください。</p>
+                <a href="concept.html" class="btn">CONCEPTを詳しく見る</a>
+            </div>
+
+            <!-- Menu Portal -->
+            <div class="reveal" style="margin-bottom: 100px;">
+                <h2
+                    style="margin-bottom:30px; font-family:'Outfit'; font-weight:300; letter-spacing: 0.1em; text-align: center;">
+                    MENU</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px;">
+                    <div
+                        style="padding: 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="font-weight: 500; display: block;">CUT</span>
+                            <small style="color: var(--text-secondary);">似合わせデザインカット</small>
+                        </div>
+                        <span style="color: var(--accent); font-weight: 500;">¥6,600 〜</span>
+                    </div>
+                    <div
+                        style="padding: 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="font-weight: 500; display: block;">COLOR</span>
+                            <small style="color: var(--text-secondary);">低ダメージ透明感カラー</small>
+                        </div>
+                        <span style="color: var(--accent); font-weight: 500;">¥8,800 〜</span>
+                    </div>
+                    <div
+                        style="padding: 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="font-weight: 500; display: block;">PERM</span>
+                            <small style="color: var(--text-secondary);">柔らかな質感のデザインパーマ</small>
+                        </div>
+                        <span style="color: var(--accent); font-weight: 500;">¥13,200 〜</span>
+                    </div>
+                    <div
+                        style="padding: 20px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="font-weight: 500; display: block;">TREATMENT</span>
+                            <small style="color: var(--text-secondary);">オーダーメイド髪質改善</small>
+                        </div>
+                        <span style="color: var(--accent); font-weight: 500;">¥4,400 〜</span>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <a href="menu.html" class="btn">詳細なMENUを見る</a>
+                </div>
+            </div>
+
+            <!-- SalonInfo Portal -->
+            <div class="reveal"
+                style="margin-bottom: 100px; padding: 50px; background: var(--bg-secondary); border-radius: 12px; border: 1px solid var(--border);">
+                <h2
+                    style="margin-bottom:25px; font-family:'Outfit'; font-weight:300; letter-spacing: 0.1em; text-align: center;">
+                    SALON INFO</h2>
+                <div style="margin-bottom: 30px; line-height: 2;">
+                    <p style="text-align:center; margin-bottom: 20px; color: var(--text-secondary);">
+                        東京・原宿。落ち着いた光が差し込むプライベートな空間でお待ちしております。</p>
+                    <div style="max-width: 500px; margin: 0 auto; font-size: 0.95rem;">
+                        <p style="display: flex; justify-content: space-between;"><span
+                                style="color: var(--accent);">ADDRESS</span> 〒150-0001 東京都渋谷区神宮前X-X-X</p>
+                        <p style="display: flex; justify-content: space-between;"><span
+                                style="color: var(--accent);">TEL</span> 03-XXXX-XXXX</p>
+                        <p style="display: flex; justify-content: space-between;"><span
+                                style="color: var(--accent);">OPEN</span> 10:00 - 20:00 (火曜定休)</p>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <a href="saloninfo.html" class="btn">アクセス・詳細情報を確認</a>
+                </div>
+            </div>
+
+            <!-- Reserve Portal -->
+            <div class="reveal"
+                style="text-align: center; padding: 80px 40px; border: 2px solid var(--border); border-radius: 12px; background: white;">
+                <h2 style="margin-bottom:20px; font-family:'Outfit'; font-weight:300; letter-spacing: 0.1em;">RESERVE
+                </h2>
+                <p style="margin-bottom: 30px; color: var(--text-secondary);">
+                    24時間いつでもオンラインでご予約いただけます。お客様のご来店を、心よりお待ちしております。</p>
+                <a href="reserve.html" class="btn"
+                    style="min-width: 280px; background: var(--accent); color: white; border-color: var(--accent);">オンライン予約はこちらから</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">SAMPLE</div>
+        <p>〒150-0001 東京都渋谷区神宮前X-X-X</p>
+        <p>TEL 03-XXXX-XXXX</p>
+        <p class="copyright">&copy; 2024 SAMPLE Hair Salon. All Rights Reserved.</p>
+        <p class="disclaimer">※このサイトは架空の美容院を想定したサンプルサイトです。</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
