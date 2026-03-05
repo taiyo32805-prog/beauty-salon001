@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONCEPT | SAMPLE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-hero {
+            background-image: url('../assets/images/hero_concept.jpg');
+        }
+
+        .content-body {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+
+        .concept-item {
+            margin-bottom: 80px;
+        }
+
+        .concept-item h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <a href="../index.html" class="logo">SAMPLE</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="concept.html">CONCEPT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="saloninfo.html">SALONINFO</a></li>
+                <li><a href="blog.html">BLOG & NEWS</a></li>
+                <li><a href="reserve.html">RESERVE</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="section-title">CONCEPT</h1>
+                <p>大切にしていること</p>
+            </div>
+        </section>
+
+        <section class="content-body">
+            <div class="concept-item">
+                <h2>Natural & Minimal</h2>
+                <p>派手すぎず、かといって地味すぎない。計算された引き算のデザインで、素材本来の美しさを引き出します。私たちは「飾り立てる」ことよりも、「整える」ことで生まれる洗練を大切にしています。</p>
+            </div>
+
+            <div class="concept-item">
+                <h2>Health First</h2>
+                <p>美しい髪は健康な地肌から。SAMPLEではオーガニックな薬剤や最新のヘアケア技術を取り入れ、髪への負担を最小限に抑えます。5年後、10年後も美しい髪でいていただくためのパートナーでありたいと願っています。
+                </p>
+            </div>
+
+            <div class="concept-item">
+                <h2>Personal Approach</h2>
+                <p>髪質、骨格、そしてライフスタイル。一人として同じ人はいません。丁寧なカウンセリングを通じて、あなたにしか似合わない「オンリーワン」のスタイルを一緒に創り上げていきます。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">SAMPLE</div>
+        <p class="copyright">&copy; 2024 SAMPLE Hair Salon. All Rights Reserved.</p>
+        <p class="disclaimer">※このサイトは架空の美容院を想定したサンプルサイトです。</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
