@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU | SAMPLE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-hero {
+            background-image: url('../assets/images/hero_menu.jpg');
+        }
+
+        .content-body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+
+        .menu-category {
+            margin-bottom: 80px;
+        }
+
+        .menu-category h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--accent-light);
+            display: inline-block;
+        }
+
+        .menu-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .menu-table td {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .menu-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: block;
+            margin-top: 5px;
+        }
+
+        .price {
+            text-align: right;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <a href="../index.html" class="logo">SAMPLE</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="concept.html">CONCEPT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="saloninfo.html">SALONINFO</a></li>
+                <li><a href="blog.html">BLOG & NEWS</a></li>
+                <li><a href="reserve.html">RESERVE</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="section-title">MENU</h1>
+                <p>施術内容と料金のご案内</p>
+            </div>
+        </section>
+
+        <section class="content-body">
+            <div class="menu-category">
+                <h2>CUT</h2>
+                <table class="menu-table">
+                    <tr>
+                        <td>
+                            一般カット
+                            <span class="menu-desc">シャンプー・ブロー込。お客様の骨格に合わせたデザインをご提案。</span>
+                        </td>
+                        <td class="price">¥6,600</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            中高生カット
+                            <span class="menu-desc">シャンプー・ブロー込。</span>
+                        </td>
+                        <td class="price">¥4,400</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            フロントカット
+                            <span class="menu-desc">前髪のみのメンテナンス。</span>
+                        </td>
+                        <td class="price">¥1,100</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="menu-category">
+                <h2>COLOR</h2>
+                <table class="menu-table">
+                    <tr>
+                        <td>
+                            スタンダードカラー
+                            <span class="menu-desc">オーガニック成分配合の薬剤を使用。</span>
+                        </td>
+                        <td class="price">¥8,800 〜</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            デザインカラー
+                            <span class="menu-desc">ハイライト、インナーカラーなど（要相談）。</span>
+                        </td>
+                        <td class="price">¥11,000 〜</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="menu-category">
+                <h2>PERM</h2>
+                <table class="menu-table">
+                    <tr>
+                        <td>
+                            ニュアンスパーマ
+                            <span class="menu-desc">自然な動きを出すパーマ。</span>
+                        </td>
+                        <td class="price">¥13,200 〜</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            髪質改善ストレート
+                            <span class="menu-desc">ダメージを抑え、自然なストレートへ導きます。</span>
+                        </td>
+                        <td class="price">¥18,700 〜</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p style="font-size:0.8rem; color:var(--text-secondary);">
+                ※表示価格はすべて税込です。<br>※ロング料金が発生する場合がございます。詳細はカウンセリング時にご説明いたします。</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">SAMPLE</div>
+        <p class="copyright">&copy; 2024 SAMPLE Hair Salon. All Rights Reserved.</p>
+        <p class="disclaimer">※このサイトは架空の美容院を想定したサンプルサイトです。</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
