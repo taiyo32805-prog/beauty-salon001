@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG & NEWS | SAMPLE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-hero {
+            height: 400px;
+            background: var(--bg-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .content-body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+
+        .blog-list {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        .blog-item {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .blog-img {
+            aspect-ratio: 16/10;
+            background: #eee;
+            border-radius: 4px;
+        }
+
+        .blog-info span {
+            font-size: 0.8rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .blog-info h2 {
+            font-size: 1.5rem;
+            margin: 10px 0 15px;
+            font-weight: 400;
+        }
+
+        .blog-info p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-item {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <a href="../index.html" class="logo">SAMPLE</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="concept.html">CONCEPT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="saloninfo.html">SALONINFO</a></li>
+                <li><a href="blog.html">BLOG & NEWS</a></li>
+                <li><a href="reserve.html">RESERVE</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="section-title">BLOG & NEWS</h1>
+                <p>最新のお知らせと日々のコラム</p>
+            </div>
+        </section>
+
+        <section class="content-body">
+            <div class="blog-list">
+                <article class="blog-item">
+                    <div class="blog-img"></div>
+                    <div class="blog-info">
+                        <span>2024.03.01 | NEWS</span>
+                        <h2>春のヘアケアキャンペーンのお知らせ</h2>
+                        <p>卒業や入学、新しい生活が始まるこの季節。SAMPLEでは、髪を芯から美しく保つための特別なトリートメントメニューをご用意しました...</p>
+                        <a href="#" style="text-decoration:underline;">READ MORE</a>
+                    </div>
+                </article>
+
+                <article class="blog-item">
+                    <div class="blog-img"></div>
+                    <div class="blog-info">
+                        <span>2024.02.15 | NEWS</span>
+                        <h2>新スタッフ加入のご報告</h2>
+                        <p>この度、都内有名店での経験を持つ新しいスタイリストがSAMPLEの一員となりました。皆様の「なりたい」を形にするお手伝いをいたします...</p>
+                        <a href="#" style="text-decoration:underline;">READ MORE</a>
+                    </div>
+                </article>
+
+                <article class="blog-item">
+                    <div class="blog-img"></div>
+                    <div class="blog-info">
+                        <span>2024.01.20 | COLUMN</span>
+                        <h2>自宅でできる、潤いキープのシャンプー術</h2>
+                        <p>美容室帰りの仕上がりを長く保つために。プロが教える、毎日のバスタイムでできる簡単なヘアケアのコツをまとめました...</p>
+                        <a href="#" style="text-decoration:underline;">READ MORE</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">SAMPLE</div>
+        <p class="copyright">&copy; 2024 SAMPLE Hair Salon. All Rights Reserved.</p>
+        <p class="disclaimer">※このサイトは架空の美容院を想定したサンプルサイトです。</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
