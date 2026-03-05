@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALONINFO | SAMPLE</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .page-hero {
+            background-image: url('../assets/images/hero_salon_inner.jpg');
+        }
+
+        .content-body {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 80px;
+        }
+
+        .info-table th {
+            text-align: left;
+            width: 120px;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--accent);
+        }
+
+        .info-table td {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .map-container {
+            width: 100%;
+            height: 450px;
+            background: #eee;
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .map-placeholder {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header" class="scrolled">
+        <a href="../index.html" class="logo">SAMPLE</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="concept.html">CONCEPT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="saloninfo.html">SALONINFO</a></li>
+                <li><a href="blog.html">BLOG & NEWS</a></li>
+                <li><a href="reserve.html">RESERVE</a></li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="section-title">SALON INFO</h1>
+                <p>店舗情報・アクセス</p>
+            </div>
+        </section>
+
+        <section class="content-body">
+            <div class="info-grid">
+                <div>
+                    <h2 style="margin-bottom:30px;">Information</h2>
+                    <table class="info-table" style="width:100%; border-collapse:collapse;">
+                        <tr>
+                            <th>店名</th>
+                            <td>SAMPLE</td>
+                        </tr>
+                        <tr>
+                            <th>住所</th>
+                            <td>〒150-0001 東京都渋谷区神宮前X-X-X SAMPLEビル 2F</td>
+                        </tr>
+                        <tr>
+                            <th>電話番号</th>
+                            <td>03-XXXX-XXXX</td>
+                        </tr>
+                        <tr>
+                            <th>営業時間</th>
+                            <td>平日・土日祝 10:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                            <th>定休日</th>
+                            <td>毎週火曜日、第3月曜日</td>
+                        </tr>
+                        <tr>
+                            <th>支払い方法</th>
+                            <td>現金、クレジットカード（VISA/Master/JCB/Amex）、キャッシュレス決済</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <h2 style="margin-bottom:30px;">Access</h2>
+                    <p>JR山手線「原宿駅」竹下口より徒歩5分</p>
+                    <p>東京メトロ「明治神宮前駅」5番出口より徒歩3分</p>
+                    <p style="margin-top:20px; color:var(--text-secondary); font-size:0.9rem;">
+                        ※専用駐車場はございません。お車でお越しの際は、近隣のコインパーキングをご利用ください。</p>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <!-- Google Map Embed Placeholder -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747975468371!2d139.70133107624103!3d35.66723223030368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ca5f8d55555%3A0x6b6d5f5f5f5f5f5f!2z5p2x5Lqs6YO95riL6LC35Yy656We5a6u5YmN!5e0!3m2!1sja!2sjp!4v1710000000000!5m2!1sja!2sjp"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">SAMPLE</div>
+        <p class="copyright">&copy; 2024 SAMPLE Hair Salon. All Rights Reserved.</p>
+        <p class="disclaimer">※このサイトは架空の美容院を想定したサンプルサイトです。</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
